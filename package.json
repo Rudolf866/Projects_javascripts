@@ -1,7 +1,0 @@
-{
-  "name": "Projects_javascript",
-  "version": "1.0.0",
-  "dependencies": {
-    "moment": "^2.26.0"
-  }
-}
