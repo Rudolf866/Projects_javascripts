@@ -12,4 +12,13 @@ function time(){
     }
     setInterval(vrema,1000);
 }
+function text(){
+    let div = document.querySelector('div.div');
+    let h2 = document.createElement("h2");
+    let node = document.createTextNode('Hello Rudik!!!');
+    h2.appendChild(node);
+    div.appendChild(h2);
+
+}
+
 
