@@ -8,7 +8,7 @@ setInterval(date,1000);
 function time(){
     function vrema(){
          let lan = document.getElementById('lang')
-        lan.innerHTML = new Date(2011, 0, 1, 2, 3, 4, 567).toTimeString();
+         lan.innerHTML = new Date(2011, 0, 1, 2, 3, 4, 567).toTimeString();
     }
     setInterval(vrema,1000);
 }
@@ -28,4 +28,15 @@ function update(){
     div.appendChild(h1);
     h1.appendChild(node);
     document.body.appendChild(div);
+}
+
+function deleteText(){
+    let div = document.querySelector('div.div');
+    let h2 = document.querySelectorAll('div.div h2')[0];
+    div.removeChild(h2);
+}
+
+function createText(){
+    let textHTML1 = document.querySelector('div.text');
+    textHTML1.innerHTML = "<h2>Это заголовок</h2><p>это текст</p>";
 }
