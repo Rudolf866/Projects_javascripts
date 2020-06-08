@@ -21,4 +21,11 @@ function text(){
 
 }
 
-
+function update(){
+    let div = document.createElement('div');
+    let h1 = document.createElement('h1');
+    let node = document.createTextNode('New Text!!!');
+    div.appendChild(h1);
+    h1.appendChild(node);
+    document.body.appendChild(div);
+}
